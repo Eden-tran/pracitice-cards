@@ -28,7 +28,7 @@ class OCRService:
             
             preprocessed_img = self._preprocess_image(img_array)
             
-            result = self.ocr.ocr(preprocessed_img, cls=True)
+            result = self.ocr.ocr(preprocessed_img)
             
             extracted_data = self._parse_ocr_result(result)
             
