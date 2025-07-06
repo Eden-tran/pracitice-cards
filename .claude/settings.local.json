@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(pkill:*)",
+      "Bash(docker exec:*)",
+      "Bash(rm:*)",
+      "Bash(python:*)",
+      "Bash(docker run:*)",
+      "Bash(docker-compose build:*)",
+      "Bash(docker-compose logs:*)",
+      "Bash(docker-compose:*)"
+    ],
+    "deny": []
+  }
+}

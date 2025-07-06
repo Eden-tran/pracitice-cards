@@ -1,0 +1,16 @@
+
+services:
+  ocr-service:
+    build: .
+    ports:
+      - "5001:5001"
+    environment:
+      - PORT=5001
+      - DEBUG=True
+      - MAX_IMAGE_SIZE=10485760
+      - OCR_ENGINE=paddleocr
+      - ALLOWED_ORIGINS=http://localhost:8000,http://localhost:3000
+      - LOG_LEVEL=INFO
+    volumes:
+      - ./uploads:/app/uploads
+    restart: unless-stopped
